@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anagha | Creative Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #100f17;
+    --card: #191722;
+    --text: #f5f0fa;
+    --muted: #aaa4b8;
+    --accent: #c6a7ff;
+    --pink: #f2b8d5;
+    --border: rgba(255,255,255,0.09);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1080px, 88%);
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 85px 0;
+    position: relative;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: clamp(44px, 8vw, 88px);
+    line-height: 1.12;
+    letter-spacing: -4px;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+h1 em {
+    color: var(--accent);
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.hero p {
+    max-width: 510px;
+    color: var(--muted);
+    margin-top: 24px;
+    font-size: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 12px 21px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.primary {
+    background: var(--accent);
+    color: #17111f;
+    font-weight: 700;
+}
+
+.secondary {
+    border: 1px solid var(--border);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 72px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 20px;
+}
+
+.section-tag {
+    color: var(--pink);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(30px, 5vw, 43px);
+    letter-spacing: -1.5px;
+    margin: 9px 0 27px;
+}
+
+.about-text {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skills span {
+    padding: 9px 15px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    color: #e3d7fa;
+    font-size: 12px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.project {
+    padding: 27px;
+    min-height: 210px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    background: linear-gradient(145deg, #1c1928, #15141d);
+    transition: .3s;
+}
+
+.project:hover {
+    border-color: rgba(198,167,255,.6);
+    transform: translateY(-5px);
+}
+
+.project-number {
+    color: var(--accent);
+    font-size: 12px;
+}
+
+.project h3 {
+    margin: 23px 0 8px;
+    font-size: 20px;
+}
+
+.project p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.project small {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--pink);
+}
+
+.contact-box {
+    padding: 35px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.contact-box p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        gap: 13px;
+        font-size: 11px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 68vh;
+    }
+
+    .section {
+        padding: 52px 0;
+    }
+
+    .contact-box {
+        padding: 23px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<nav>
+    <a class="logo" href="#">anagha<span>.</span></a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="eyebrow">✳ Computer Engineering Student</div>
+    <h1>Turning ideas<br>into <em>something</em><br>meaningful.</h1>
+    <p>
+        Hi, I'm Anagha — a CSE student and aspiring
+        software developer who loves building useful
+        things with code and exploring new ideas.
+    </p>
+    <div class="actions">
+        <a href="#projects" class="btn primary">Explore my work ↗</a>
+        <a href="#contact" class="btn secondary">Get in touch</a>
+    </div>
+</header>
+
+<section class="section" id="about">
+    <div class="section-tag">01 / A little about me</div>
+    <h2>Curious by nature.<br><em style="font-family:'Playfair Display';color:#c6a7ff">Creative by choice.</em></h2>
+    <p class="about-text">
+        I'm pursuing Computer Engineering after completing
+        my diploma. I enjoy learning how technology works
+        and turning what I learn into real projects.
+        My goal is to grow as a software developer, one
+        project and one new skill at a time.
+    </p>
+</section>
+
+<section class="section" id="skills">
+    <div class="section-tag">02 / My toolkit</div>
+    <h2>Things I work with.</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>Django</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>MySQL</span>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="section-tag">03 / Selected projects</div>
+    <h2>Little ideas, real projects.</h2>
+
+    <div class="projects">
+        <article class="project">
+            <div class="project-number">PROJECT / 01</div>
+            <h3>MindSense ↗</h3>
+            <p>A mental wellness project exploring emotion-aware interactions and a supportive digital experience.</p>
+            <small>Python · Django</small>
+        </article>
+
+        <article class="project">
+            <div class="project-number">PROJECT / 02</div>
+            <h3>Salary Management ↗</h3>
+            <p>A simple system to organise salary details, track goals and manage financial records.</p>
+            <small>Web Development</small>
+        </article>
+
+        <article class="project">
+            <div class="project-number">PROJECT / 03</div>
+            <h3>Personal Portfolio ↗</h3>
+            <p>A little corner of the internet to share my journey, skills and work.</p>
+            <small>HTML · CSS · Git</small>
+        </article>
+
+        <article class="project">
+            <div class="project-number">PROJECT / 04</div>
+            <h3>More to come ✳</h3>
+            <p>Currently learning, experimenting and working on new ideas. This space will keep growing.</p>
+            <small>Always learning</small>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="section-tag">04 / Say hello</div>
+    <div class="contact-box">
+        <h2>Have an idea?<br><em style="font-family:'Playfair Display';color:#c6a7ff">Let's connect.</em></h2>
+        <p>I'm always open to learning, collaborating and connecting with fellow developers.</p>
+        <a class="btn primary" href="mailto:anaghasivan92@example.com">Email me ↗</a>
+    </div>
+</section>
+
+<footer>
+    <span>© 2026 Anagha</span>
+    <span>Made with curiosity & a little lavender ✳</span>
+</footer>
+
+</div>
+</body>
+</html>
