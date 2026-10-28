@@ -1,58 +1,77 @@
-# ✦ Anagha's Portfolio
+# ✨ Personal Portfolio Website
 
-### Turning ideas into something meaningful.
+A personal portfolio website showcasing my introduction, technical skills, projects, and contact information.
 
-Welcome to my personal portfolio! This website showcases my journey as a Computer Engineering student, my technical skills, and the projects I build along the way.
+## 📌 Project Overview
 
-## ✧ About Me
+This website presents my journey as a Computer Engineering student and aspiring software developer. It provides a simple way to explore my skills, learn about my projects, and connect with me.
 
-I'm Anagha, a Computer Engineering student and aspiring Software Developer. I enjoy exploring new technologies, developing useful projects, and continuously improving my coding skills.
+## 🎯 Objectives
 
-## ✧ Tech Stack
+- Create a personal online portfolio.
+- Showcase technical skills and projects.
+- Practise HTML and CSS web development.
+- Present personal and project information clearly.
+- Build a responsive and user-friendly website.
 
-- **Frontend:** HTML, CSS
-- **Programming:** Python, Java
-- **Framework:** Django
-- **Tools:** Git, GitHub
+## 🛠️ Technologies Used
 
-## ✧ Featured Projects
+- **HTML5** — Website structure and content.
+- **CSS3** — Styling, layout, colours, and responsive design.
+- **Google Fonts** — Typography.
 
-### 01. MindSense
-A mental wellness project exploring emotion-aware interactions and supportive digital experiences.
+## ⭐ Features
 
-### 02. Salary Management System
-A project designed to organise salary records and track financial goals.
+- Personal introduction and hero section.
+- About Me section.
+- Technical Skills section.
+- Project showcase.
+- Contact section with an email link.
+- Navigation links to different sections.
+- Dark theme with lavender accents.
+- Responsive layout for smaller screens.
 
-### 03. Personal Portfolio
-A responsive personal website built to showcase my skills, projects, and developer journey.
+## 📂 Project Structure
 
-## ✧ Features
+```text
+Protfolio/
+├── index.html
+└── README.md
+```
 
-- Minimal and aesthetic dark theme
-- Lavender and pink colour palette
-- About Me section
-- Technical skills showcase
-- Project cards
-- Contact section
-- Responsive layout
+## 🚀 How to Run the Project
 
-## ✧ Run Locally
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/anaghasivan92-design/Protfolio.git
-   ```
-
+1. Clone or download this repository.
 2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Explore the About, Skills, Projects, and Contact sections.
 
-3. Open `index.html` in your browser.
+No backend or database setup is required for this static website.
 
-## ✧ Connect With Me
+## 📸 Screenshots
 
-- **GitHub:** [anaghasivan92-design](https://github.com/anaghasivan92-design)
+Add screenshots of the website here after capturing them from your browser.
 
----
+Suggested screenshots:
+- Home / Hero Section
+- About and Skills Sections
+- Projects Section
+- Contact Section
 
-*Made with curiosity, creativity, and a little lavender. ✿*
+## 🔮 Future Improvements
 
-© 2026 Anagha
+- Add direct links to project repositories.
+- Improve mobile navigation.
+- Add more projects as they are completed.
+- Add a downloadable resume.
+- Enhance accessibility and user experience.
+
+## 👩‍💻 Author
+
+**Anagha**
+
+Computer Engineering Student | Aspiring Software Developer
+
+## 📄 License
+
+This project was created for learning and portfolio purposes.
